@@ -22,7 +22,7 @@ for block in blockchain.get_unordered_blocks():
     print("Hexa Length:", hex_message_length)
     # Decode the message
     try:
-        if hex_message_length is not 0:
+        if hex_message_length != 0:
             if (hex_message_length % 2) != 0:
                 hex_message = hex_message[1:]
             if hex_message_length > 16:
